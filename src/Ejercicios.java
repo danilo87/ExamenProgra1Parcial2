@@ -5,21 +5,43 @@ public class Ejercicios
 	//2 puntos
 	static boolean esMultiploDeTres(int num)
 	{
-		return false;
+		 //aqui declaro el multiplo y lo comparo a 0 para comprobar si es multiplo de 3, true, de lo contrario retornara falso
+        int test=num%3;
+       
+        if(test==0)
+        {
+            return true;
+        }
+             return false;
 	}
 	
 	//devuelve el numero menor entre a, b o c
 	//3 puntos
 	static int getMenor(int a, int b, int c)
 	{
-		return -1;
+		//aqui compara las variables entre si, con el fin de saber el menor de las 3, se comparan entre si, la menor sera retornada
+		if(a<b && a<c)
+        {
+            return a;
+        }
+        else if(b<a && b<c)
+        {
+            return b;
+        }
+            return c;
 	}
 	
 	//devuelve el promedio los elementos de un arreglo
 	//5 puntos
 	static int getPromedio(int arreglo[])
 	{
-		return -1;
+		//declaro la variable promedio, con el for medimos a lo largo del arreglo, que retornara al final el promedio
+		int promedio = 0;
+		for( int x=0; x<arreglo.length; x++ )
+		{
+		promedio += arreglo[x];
+		}
+		return promedio = promedio / arreglo.length; 
 	}
 	
 	//Realizar una funcion con las siguientes indicaciones:
@@ -28,7 +50,14 @@ public class Ejercicios
 	//Si el parametro recibido es "Inglaterra" devolvera "Londres"
 	static String getCapital(String pais)
 	{
-		return "";
+		String capital = null;
+		if(capital.equals(pais))
+		{
+			System.out.println("El mismo contenido");
+		}else{
+			System.out.println("Distinto contenido");
+		}
+		return capital;
 	}
 	
 	//realizarla siguiente funcion recurisva:
